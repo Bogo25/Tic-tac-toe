@@ -44,13 +44,13 @@ while True:
     if tic_tac_toe_check(player, positions, score):
         tic_tac_toe_board(positions)
         while True:
-            again = input("Wanna play again? [YES/NO]: ")
+            again = input("Wanna play again? [YES/no]: ")
             again = again.lower()
-            if again == "yes":
+            if again == "yes" or again == "y" or again = "":
                 positions = {"1": "-", "2": "-", "3": "-", "4": "-", "5": "-", "6": "-", "7": "-", "8": "-", "9": "-"}
                 print(f"X {score['X']} - {score['O']} O")
                 break
-            elif again == "no":
+            elif again == "no" or again == "n":
                 break
             else:
                 print("Invalid command")
